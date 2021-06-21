@@ -1,0 +1,6 @@
+[Dev-lab_awx]
+dev-lab_awx01
+dev-lab_awx02
+
+[UCLM:children]
+Dev-lab_awx
