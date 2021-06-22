@@ -1,0 +1,21 @@
+name: Config Vim with plugins
+  hosts: lab_awx09
+  gather_facts: yes
+  become: no
+
+  tasks:
+    - name: Install required packages
+      package:
+        name:
+          - vim-enhanced
+        state: installed
+        become: yes
+        tags:
+          - install_packages
+
+    - name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+      ansible.builtin.user:
+        name: Jaime
+        comment: Jaime jaime
+        uid: 1040
+        group: admin
