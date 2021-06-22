@@ -1,5 +1,5 @@
 name: Config Vim with plugins
-  hosts: oscar-lab_awx09
+  hosts: lab_awx09
   gather_facts: yes
   become: no
 
